@@ -8,11 +8,10 @@
 
     <style>
         #sidebar {
-            height: 100vh;     
+            height: 775px;     
             width: 300px; 
             background-color: #1e252b; 
             color: white;
-            position: fixed;
             display: flex;
             flex-direction: column;
             padding: 20px;
@@ -51,29 +50,30 @@
             padding-bottom: 20px;
         }
 
-        
-
-        .col-lg-8{
-            margin-left: 320px;
-            padding: 40px;
-            width: auto;
-        }
-
         #bookstext {
             background-color: #1e252b;
             color: rgb(0, 0, 0);
-            display: inline-block;
+            display: block;
             padding: 8px 20px;
             border-radius: 8px;
             font-weight: bold;
+            
         }
 
-        .col-md-4{
+        #subjbox{
             background-color: #d1d5db;
             border-radius: 15px;
             padding: 25px;
             box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.44);
             height: 100%; 
+            width: 100%;
+        }
+
+        h1{
+            background-color: #1e252b;
+            color: white;
+            padding: 10px;
+            border-radius: 15px;
         }
 
         h2{
@@ -86,10 +86,10 @@
         }
         
         p{
-            color: rgb(122, 122, 122);
+            color: #7c7c7c;
         }
 
-        #footline {
+        #line {
             height: 20px;
             width: 100%;
             background-color: #5a636a;
@@ -97,9 +97,10 @@
         }
 
         img{
-            width: auto;
-            height: 110px;
-            border-radius: 5px;
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px; 
         }
     </style>
 </head>
@@ -119,7 +120,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="notebooks.html">Virtual Notebook</a>
+                        <a class="nav-link" href="notebooks.html">Virtual Notebooks</a>
                     </li>
 
                     <li class="nav-item">
@@ -136,70 +137,142 @@
                 </ul>
             </div>
             
-            <div class="col-lg-1">
-                <h1>NOTEBOOKS</h1>
-            </div>
-
-            <div class="col-lg-8">
-                <div class="row g-4">
-                    <div class="col-md-4">
-                        <h2>Filipino</h2>
-
-                        <div class="imagebox">
-                            <img src="https://storage.googleapis.com/oa_disk001/obfairview/67/classfeed/3627/cover_photo/1753929592-2722.png" alt="Filipino">
-                        </div>
-
-                        <br>
-
-                        <h6>9 - Amethyst 2025-2026</h6>
-
-                        <br>
-
-                        <p>Ms. Francisco</p>
-
-                        <div id="footline"></div>
+            <div class="col-lg-9 p-4">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h1>NOTEBOOKS</h1>
+                        <p>Select a subject.</p>
                     </div>
+                    
+                    <div class="col-lg-9"> 
+                        <div class="row g-4">
+                            <div class="col-lg-4">
+                                <div id="subjbox">
+                                    <h2>Filipino</h2>
 
-                    <div class="col-md-4">
-                        <h2>Filipino</h2>
+                                    <div class="imagebox">
+                                        <img src="https://storage.googleapis.com/oa_disk001/obfairview/67/classfeed/3627/cover_photo/1753929592-2722.png" alt="Filipino">
+                                    </div>
 
-                        <div class="imagebox">
-                            <img src="https://storage.googleapis.com/oa_disk001/obfairview/67/classfeed/3627/cover_photo/1753929592-2722.png" alt="Filipino">
+                                    <br>
+
+                                    <h6>9 - Amethyst 2025-2026</h6>
+
+                                    <br>
+
+                                    <p>Ms. Francisco</p>
+
+                                    <div id="line"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div id="subjbox">
+                                    <h2>English</h2>
+
+                                    <div class="imagebox">
+                                        <img src="https://storage.googleapis.com/oa_disk001/obfairview/67/classfeed/3553/cover_photo/1753925262-2513.png" alt="Filipino">
+                                    </div>
+
+                                    <br>
+
+                                    <h6>9 - Amethyst 2025-2026</h6>
+
+                                    <br>
+
+                                    <p>Ms. Avila</p>
+
+                                    <div id="line"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div id="subjbox">
+                                    <h2>Math</h2>
+
+                                    <div class="imagebox">
+                                        <img src="https://storage.googleapis.com/oa_disk001/obfairview/67/classfeed/3717/cover_photo/1754011616-914.png" alt="Filipino">
+                                    </div>
+
+                                    <br>
+
+                                    <h6>9 - Amethyst 2025-2026</h6>
+
+                                    <br>
+
+                                    <p>Mr. Verba</p>
+
+                                    <div id="line"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div id="subjbox">
+                                    <h2>Science</h2>
+                                    
+
+                                    <div class="imagebox">
+                                        <img src="https://storage.googleapis.com/oa_disk001/obfairview/67/classfeed/3560/cover_photo/1753925577-1020.jpg" alt="Filipino">
+                                    </div>
+
+                                    <br>
+
+                                    <h6>9 - Amethyst 2025-2026</h6>
+
+                                    <br>
+
+                                    <p>Ms. Mendaro</p>
+
+                                    <div id="line"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div id="subjbox">
+                                    <h2>Social Studies</h2>
+
+                                    <div class="imagebox">
+                                        <img src="https://storage.googleapis.com/oa_disk001/obfairview/67/classfeed/3652/cover_photo/1753941739-1229.jpg" alt="Filipino">
+                                    </div>
+
+                                    <br>
+
+                                    <h6>9 - Amethyst 2025-2026</h6>
+
+                                    <br>
+
+                                    <p>Mr. Reynoso</p>
+
+                                    <div id="line"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div id="subjbox">
+                                    <h2>Values Education</h2>
+
+                                    <div class="imagebox">
+                                        <img src="https://storage.googleapis.com/oa_disk001/obfairview/67/classfeed/3673/cover_photo/1753944145-309.png" alt="Filipino">
+                                    </div>
+
+                                    <br>
+
+                                    <h6>9 - Amethyst 2025-2026</h6>
+
+                                    <br>
+
+                                    <p>Mr. Buntile</p>
+
+                                    <div id="line"></div>
+                                </div>
+                            </div>
                         </div>
-
-                        <br>
-
-                        <h6>9 - Amethyst 2025-2026</h6>
-
-                        <br>
-
-                        <p>Ms. Francisco</p>
-
-                        <div id="footline"></div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <h2>Filipino</h2>
-
-                        <div class="imagebox">
-                            <img src="https://storage.googleapis.com/oa_disk001/obfairview/67/classfeed/3627/cover_photo/1753929592-2722.png" alt="Filipino">
-                        </div>
-
-                        <br>
-
-                        <h6>9 - Amethyst 2025-2026</h6>
-
-                        <br>
-
-                        <p>Ms. Francisco</p>
-
-                        <div id="footline"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
 </body>
-</html>
+</html> 
 
+<!-- All pictures were goten from the Ob Digi -->
