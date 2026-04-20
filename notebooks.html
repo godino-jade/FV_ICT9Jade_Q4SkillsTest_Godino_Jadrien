@@ -7,54 +7,198 @@
     <title>Q4 Skills Test</title>
 
     <style>
-        #sidebar{
-            background-color: rgb(31, 30, 35);
+        #sidebar {
+            height: 100vh;     
+            width: 300px; 
+            background-color: #1e252b; 
+            color: white;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
         }
 
+        #logobox{
+            width: 100%;            
+            display: block;       
+            text-align: center;    
+            margin-bottom: 20px;
+        }
+
+        #logo {
+            height: 100px;
+            width: auto;
+            border-radius: 30px;
+            display: block; 
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            padding: 10px;
+        }
+
+        .navbar-nav{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        #logoutbtn {
+            margin-top: auto; 
+            padding-bottom: 20px;
+        }
+
+        
+
+        .col-lg-8{
+            margin-left: 320px;
+            padding: 40px;
+            width: auto;
+        }
+
+        #bookstext {
+            background-color: #1e252b;
+            color: rgb(0, 0, 0);
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .col-md-4{
+            background-color: #d1d5db;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.44);
+            height: 100%; 
+        }
+
+        h2{
+            font-weight: bold;
+        }
+
+        h6{
+           font-weight: bold;
+           color: #7c7c7c; 
+        }
+        
+        p{
+            color: rgb(122, 122, 122);
+        }
+
+        #footline {
+            height: 20px;
+            width: 100%;
+            background-color: #5a636a;
+            border-radius: 10px;
+        }
+
+        img{
+            width: auto;
+            height: 110px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-3" id="sidebar">
-                <a href="https://company.meralco.com.ph/meralco-online" target="_blank">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHZ6oTTdi1oSh_pRZW7VdYonCoHyFW4cRaRg&s" alt="meralcologo">
-                </a>    
+                <div class="logobox">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcHVuqgJPs1mFipnjsVwsFIYiYwTaulS-1_w&s" alt="Logo" id="logo">
+                </div>
 
+                <br><br>
+
+                <ul class="navbar-nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link">Dashboard</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="notebooks.html">Virtual Notebook</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link">Tasks</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link">Profile</a>
+                    </li>
+
+                    <li class="nav-item" id="logoutbtn">
+                        <a class="nav-link" href="index.html">Logout</a>
+                    </li>   
+                </ul>
+            </div>
+            
+            <div class="col-lg-1">
+                <h1>NOTEBOOKS</h1>
             </div>
 
-            <div class="col-lg-9">
-                <div class="container-fluid">
-                        <div class="row gap-3 justify-content-center" style="height: 500px;">
-                            <div class="col-lg-5 bg-danger h-50" style="padding: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.55);">
-                                <h2> 🥗 Emergency Water & Food</h2>
-                                <br>
-                                <p>You need at least 3 gallons per day, for sanitation and consuming purposes (per person). Then, you will need food like canned goods and other non-perishable food enough to supply for several days.</p>
-                            </div>
+            <div class="col-lg-8">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <h2>Filipino</h2>
 
-                            <div class="col-lg-5 bg-warning h-50" style="padding: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.55);">
-                                <h2> 🩹 First Aid Kit</h2>
-                                <br>
-                                <p>These kits contain tools like sterile gauze pads, adhesive tape, safety pins, antiseptic solution, and many more. You can also find in these kits, medicine and ointments that are essential for survival.</p>
-                            </div>
-
-                            <div class="col-lg-5 bg-warning h-50" style="padding: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.55);">
-                                <h2> 🔦 Flashlight & Whistle</h2>
-                                <br>
-                                <p>These give you light in the dark, give you vision in unfamiliar places, and it can act as a signal for help. In adddition, they can give out loud noises that grabs attention even from a distance.</p>
-                            </div>
-
-                            <div class="col-lg-5 bg-danger h-50" style="padding: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.55);">
-                                <h2> 👕 Extra Clothes</h2>
-                                <br>
-                                <p>These are needed incase your current clothes get dirtied or rained on. It is for personal comfort and hygiene. Moreover, it can include weather-based clothing like rainjackets, gloves, protective gear, etc.</p>
-                            </div>
+                        <div class="imagebox">
+                            <img src="https://storage.googleapis.com/oa_disk001/obfairview/67/classfeed/3627/cover_photo/1753929592-2722.png" alt="Filipino">
                         </div>
+
+                        <br>
+
+                        <h6>9 - Amethyst 2025-2026</h6>
+
+                        <br>
+
+                        <p>Ms. Francisco</p>
+
+                        <div id="footline"></div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h2>Filipino</h2>
+
+                        <div class="imagebox">
+                            <img src="https://storage.googleapis.com/oa_disk001/obfairview/67/classfeed/3627/cover_photo/1753929592-2722.png" alt="Filipino">
+                        </div>
+
+                        <br>
+
+                        <h6>9 - Amethyst 2025-2026</h6>
+
+                        <br>
+
+                        <p>Ms. Francisco</p>
+
+                        <div id="footline"></div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h2>Filipino</h2>
+
+                        <div class="imagebox">
+                            <img src="https://storage.googleapis.com/oa_disk001/obfairview/67/classfeed/3627/cover_photo/1753929592-2722.png" alt="Filipino">
+                        </div>
+
+                        <br>
+
+                        <h6>9 - Amethyst 2025-2026</h6>
+
+                        <br>
+
+                        <p>Ms. Francisco</p>
+
+                        <div id="footline"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-
     
 </body>
 </html>
